@@ -17,8 +17,7 @@ const medicineReducer = (state = initialState, action) => {
         case FETCH_MEDICINES_SUCCESS:
             return {
                 medicines: action.payload.medicines,
-                lastVisible: action.payload.lastVisible,
-                firstVisible: action.payload.firstVisible,
+                paginationObj: action.payload.paginationObj,
                 err: ''
             }
         case FETCH_MEDICINES_FAILURE:

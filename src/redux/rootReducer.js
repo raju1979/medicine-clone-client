@@ -24,12 +24,10 @@ const appReducer  = combineReducers({
 // Below code will reset the app
 
 const rootReducer = (state, action) => {
-    console.log(action);
     if(action.type === 'LOGOUT_USER') {
         state = undefined
     }
 
-    console.log('STATE', state)
     return appReducer(state, action)
 }
 

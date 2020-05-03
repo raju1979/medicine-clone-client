@@ -71,13 +71,13 @@ class App extends React.Component {
                 <Switch>
                   <Route exact path="/login" component={Login} />
                   <Route exact path="/signup" component={SignUp} />
-                  <PrivateRoute path="/home">
+                  <PrivateRoute path="">
                     <Home />
                   </PrivateRoute>
                   <PrivateRoute path="/review">
                     <OrderReview />
                   </PrivateRoute>
-                  <Redirect to="/home" />
+                  <Redirect to="" />
                 </Switch>
             </Router>
           </App>

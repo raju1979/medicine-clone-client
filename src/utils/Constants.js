@@ -13,4 +13,6 @@ const dev = {
 
 dev['BASE_URL'] = 'api/v1';
 
+prod['BASE_URL'] = 'api/v1';
+
 export const config = process.env.NODE_ENV === "development" ? dev : prod;
